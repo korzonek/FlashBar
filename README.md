@@ -6,6 +6,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+None
+
 ## Installation
 
 Dupa is available through [CocoaPods](http://cocoapods.org). To install
@@ -13,6 +15,25 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod "FlashBar"
+```
+
+
+# Usage
+
+```objective-c
+@import FlashBar;
+
+// ...
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.navigationController.flashBar.backgroundColor = [UIColor greenColor];
+}
+
+- (IBAction)someAction:(id)sender {
+    BOOL hidden = self.navigationController.flashBar.hidden;
+    [self.navigationController.flashBar setHidden:!hidden animated:YES];
+}
 ```
 
 ## Author
