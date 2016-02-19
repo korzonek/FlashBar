@@ -11,6 +11,7 @@ import UIKit
 
 public extension FlashBar {
     
+    /// The label, which is located in the center of the flash bar.
     public var messageLabel: UILabel {
         return findMessageLabel() ?? createMessageLabel()
     }

@@ -22,6 +22,7 @@ public class FlashBar: UIView {
         }
     }
     
+    /// Sets whether the flash bar is hidden.
     public func setHidden(hide: Bool, animated animate: Bool) {
         let duration = Double(UINavigationControllerHideShowBarDuration)
 

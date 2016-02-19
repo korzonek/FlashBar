@@ -11,6 +11,9 @@ import UIKit
 
 public extension UINavigationController {
 
+    /// The flash bar managed by navigation controller.
+    ///
+    /// Its creation is deferred until it is first used.
     public var flashBar: FlashBar {
         return findFlashBar() ?? createFlashBar()
     }
