@@ -24,6 +24,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        flash.messageLabel.text = "hello world"
+        flash.messageLabel.font = .systemFontOfSize(11)
+        flash.messageLabel.textColor = .whiteColor()
+        
         flash.backgroundColor = .greenColor()
     }
 

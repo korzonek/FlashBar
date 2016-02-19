@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8B02FE491C71CA5E00638BA5 /* FlashBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B02FE481C71CA5E00638BA5 /* FlashBar.swift */; };
 		8B02FE6D1C71CAC000638BA5 /* UINavigationController+FlashBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B02FE6C1C71CAC000638BA5 /* UINavigationController+FlashBar.swift */; };
+		8B22708F1C77AECD0049042F /* FlashBar+MessageLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B22708E1C77AECD0049042F /* FlashBar+MessageLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		8B02FE461C71CA3800638BA5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		8B02FE481C71CA5E00638BA5 /* FlashBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashBar.swift; sourceTree = "<group>"; };
 		8B02FE6C1C71CAC000638BA5 /* UINavigationController+FlashBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+FlashBar.swift"; sourceTree = "<group>"; };
+		8B22708E1C77AECD0049042F /* FlashBar+MessageLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FlashBar+MessageLabel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 			children = (
 				8B02FE481C71CA5E00638BA5 /* FlashBar.swift */,
 				8B02FE6C1C71CAC000638BA5 /* UINavigationController+FlashBar.swift */,
+				8B22708E1C77AECD0049042F /* FlashBar+MessageLabel.swift */,
 			);
 			path = FlashBar;
 			sourceTree = "<group>";
@@ -133,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B02FE491C71CA5E00638BA5 /* FlashBar.swift in Sources */,
+				8B22708F1C77AECD0049042F /* FlashBar+MessageLabel.swift in Sources */,
 				8B02FE6D1C71CAC000638BA5 /* UINavigationController+FlashBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
