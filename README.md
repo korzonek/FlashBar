@@ -1,5 +1,7 @@
 # FlashBar
 
+[![codebeat badge](https://codebeat.co/badges/404796ac-60b2-42cb-9cd9-5ebe408afa19)](https://codebeat.co/projects/github-com-defual-flashbar)
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -10,7 +12,7 @@ None
 
 ## Installation
 
-Dupa is available through [CocoaPods](http://cocoapods.org). To install
+FlashBar is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
