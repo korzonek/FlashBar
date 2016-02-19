@@ -159,6 +159,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="grR-Vj-G1P" kind="show" id="8hH-Jh-pfd"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -170,14 +173,9 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Title" id="Hlj-h7-LzQ">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="GLr-wQ-bZy">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="GLr-wQ-bZy">
                             <connections>
                                 <action selector="toogle:" destination="R6n-5Z-8VP" id="YQz-eD-OpZ"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="AYy-fX-ufs">
-                            <connections>
-                                <action selector="color:" destination="R6n-5Z-8VP" id="RTY-tx-SlL"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -185,7 +183,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pfv-Oj-Ltg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1782" y="-69"/>
+            <point key="canvasLocation" x="1782" y="-131"/>
         </scene>
         <!--Item-->
         <scene sceneID="rER-mC-D33">
@@ -218,21 +216,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="LOy-7m-uNG">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="0D6-5u-mKr">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="0D6-5u-mKr">
                             <connections>
                                 <action selector="toogle:" destination="grR-Vj-G1P" id="Ou0-Fg-9qX"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="beY-Sg-evk">
-                            <connections>
-                                <action selector="color:" destination="grR-Vj-G1P" id="WnR-93-gDD"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m2f-IW-rki" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1782" y="614"/>
+            <point key="canvasLocation" x="1782" y="628"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="XaK-hI-bNb">
@@ -272,4 +265,7 @@
             <point key="canvasLocation" x="970" y="614"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="O7H-Mg-lEu"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -23,19 +23,19 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        flash.backgroundColor = colors.sample
+        
+        flash.messageLabel.text = "hello world"
+        flash.messageLabel.font = .systemFontOfSize(11)
+        flash.messageLabel.textColor = .whiteColor()
+        
+        flash.backgroundColor = .greenColor()
     }
-    
+
+
     // MARK: - Actions
     
     @IBAction func toogle(sender: AnyObject) {
         flash.setHidden(!flash.hidden, animated: true)
-    }
-    
-    @IBAction func color(sender: AnyObject) {
-        UIView.animateWithDuration(1.0) {
-            self.flash.backgroundColor = self.colors.sample
-        }
     }
 
 }

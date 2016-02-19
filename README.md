@@ -1,14 +1,22 @@
 # FlashBar
 
+![FlashBar Image](Page/flashbar-red.jpg)]
+
+
+##
+
 [![codebeat badge](https://codebeat.co/badges/404796ac-60b2-42cb-9cd9-5ebe408afa19)](https://codebeat.co/projects/github-com-defual-flashbar)
+
 
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+
 ## Requirements
 
 None
+
 
 ## Installation
 
@@ -21,6 +29,25 @@ pod "FlashBar"
 
 
 # Usage
+
+```swift
+import FlashBar
+
+// ...
+
+    @IBAction func someAction(sender: AnyObject) {
+        let flash = navigationController!.flashBar
+
+        flash.messageLabel.text = "hello world"
+        flash.messageLabel.font = .systemFontOfSize(11)
+        flash.messageLabel.textColor = .whiteColor()
+
+        flash.backgroundColor = .redColor()
+
+        flash.setHidden(false, animated: true)
+    }
+```
+
 
 ```objective-c
 @import FlashBar;
@@ -38,9 +65,11 @@ pod "FlashBar"
 }
 ```
 
+
 ## Author
 
 Damian Rzeszot, damian.rzeszot+flashbar@gmail.com
+
 
 ## License
 

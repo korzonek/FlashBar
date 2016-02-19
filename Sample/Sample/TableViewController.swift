@@ -12,31 +12,10 @@ import FlashBar
 
 class TableViewController: UITableViewController {
     
+    let colors: [UIColor] = [ .redColor(), .greenColor(), .yellowColor() ]
+    
     var flash: FlashBar {
         return navigationController!.flashBar
-    }
-    
-    func flashMessage(text: String) {
-        if !flash.hidden {
-            return
-        }
-        
-        for v in flash.subviews {
-            v.removeFromSuperview()
-        }
-
-        let label = UILabel()
-        label.text = text
-        label.textColor = .whiteColor()
-        label.font = .systemFontOfSize(12)
-        
-        flash.addSubview(label)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        
-        flash.addConstraint(NSLayoutConstraint(item: label, attribute: .CenterX, relatedBy: .Equal, toItem: flash, attribute: .CenterX, multiplier: 1, constant: 0))
-        flash.addConstraint(NSLayoutConstraint(item: label, attribute: .CenterY, relatedBy: .Equal, toItem: flash, attribute: .CenterY, multiplier: 1, constant: 0))
-        
-        flash.setHidden(false, animated: true)
     }
 
     
@@ -44,17 +23,19 @@ class TableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        flash.messageLabel.text = "hello world"
+        flash.messageLabel.font = .systemFontOfSize(11)
+        flash.messageLabel.textColor = .whiteColor()
+        
         flash.backgroundColor = .redColor()
     }
+    
     
     // MARK: - Actions
     
     @IBAction func toogle(sender: AnyObject) {
         flash.setHidden(!flash.hidden, animated: true)
-    }
-    
-    @IBAction func color(sender: AnyObject) {
-        flashMessage("Lorem ipsum est minorum")
     }
 
 }
