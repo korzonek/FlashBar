@@ -11,6 +11,7 @@ import UIKit
 
 public extension FlashBar {
     
+    /// The label, which is located in the center of the flash bar.
     public var messageLabel: UILabel {
         return findMessageLabel() ?? createMessageLabel()
     }
@@ -28,9 +29,12 @@ public extension FlashBar {
         self.addSubview(label)
         
         label.translatesAutoresizingMaskIntoConstraints = false
-        self.addConstraint(NSLayoutConstraint(item: label, attribute: .CenterX, relatedBy: .Equal, toItem: self, attribute: .CenterX, multiplier: 1, constant: 0))
-        self.addConstraint(NSLayoutConstraint(item: label, attribute: .CenterY, relatedBy: .Equal, toItem: self, attribute: .CenterY, multiplier: 1, constant: 0))
         
+        let attributes: [NSLayoutAttribute] = [.CenterX, .CenterY]
+        for attribute in attributes {
+            self.addConstraint(NSLayoutConstraint(item: label, attribute: attribute, relatedBy: .Equal, toItem: self, attribute: attribute, multiplier: 1, constant: 0))
+        }
+
         return label
     }
 
