@@ -30,6 +30,25 @@ pod "FlashBar"
 
 # Usage
 
+```swift
+import FlashBar
+
+// ...
+
+    @IBAction func someAction(sender: AnyObject) {
+        let flash = navigationController!.flashBar
+
+        flash.messageLabel.text = "hello world"
+        flash.messageLabel.font = .systemFontOfSize(11)
+        flash.messageLabel.textColor = .whiteColor()
+
+        flash.backgroundColor = .redColor()
+
+        flash.setHidden(false, animated: true)
+    }
+```
+
+
 ```objective-c
 @import FlashBar;
 
